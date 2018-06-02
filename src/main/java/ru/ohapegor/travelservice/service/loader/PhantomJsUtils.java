@@ -31,7 +31,7 @@ public class PhantomJsUtils {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setJavascriptEnabled(true);
         logger.info("os name :"+System.getenv("OS"));
-        if (!System.getenv("OS").toLowerCase().contains("win")) {
+        if (System.getenv("OS") == null || !System.getenv("OS").toLowerCase().contains("win")) {
             caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "/usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
         }else {
             caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "c:\\Soft\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
