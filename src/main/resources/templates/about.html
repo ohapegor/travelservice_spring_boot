@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112055931-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112055931-1');
+    </script>
+
+    <title>Турагентство "Travel Service" г. Киров (ул. Спасская 18) - О нас</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>--%>
+    <div th:insert="fragments/headTag"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Yandex.Metrika counter -->
+<div th:insert="fragments/yandex-metrika"></div>
+<!--==============================header=================================-->
+<!--==============================Content=================================-->
+<div class="content">
+    <div th:insert="fragments/header"></div>
+    <div class="container_12">
+        <h4 align="center">Дополнительные услуги</h4>
+        <br/>
+        <h6>Мы организуем командировки и деловые поездки по России, за границу, а также занимаемся приемом ваших
+            иностранных гостей, клиентов и контрагентов.</h6>
+        <h5><i class="fa fa-suitcase" aria-hidden="true"></i> Базовые услуги в поездках для бизнеса:</h5>
+        <ul class="pl">
+            <li><i class="fa fa-plane"> бронирование авиа билетов;</i></li>
+            <li><i class="fa fa-train" aria-hidden="true"> бронирование ж/д билетов по России и за рубежом;</i></li>
+            <li><i class="fa fa-bed"> бронирование номеров в отелях в России и за рубежом;</i></li>
+            <li><i class="fa fa-car"> аренда автомобилей;</i></li>
+            <li><i class="fa fa-road"> трансферы;</i></li>
+            <li><i class="fa fa-bus"> экскурсионное обслуживание;</i></li>
+            <li><i class="fa fa-id-card"> визовая поддержка;</i></li>
+            <li><i class="fa fa-handshake-o"> оформление приглашений для иностранных граждан;</i></li>
+            <li><i class="fa fa-plus-square"> оформление медицинских страховок.</i></li>
+        </ul>
+        <h3 align="center">Наши достижения <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+        <br/>
+        <div class="row">
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m1">
+                    <span aria-hidden="true"><img class="card-img-top" src="images/about/1.jpg" alt="Card image"></span>
+                </button>
+                <div class="modal fade" id="m1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/1.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m2">
+                    <img class="card-img-top" src="images/about/2.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/2.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m2">
+                    <img class="card-img-top" src="images/about/3.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m3">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/3.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m4">
+                    <img class="card-img-top" src="images/about/4.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m4">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/4.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m5">
+                    <img class="card-img-top" src="images/about/5.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m5">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/5.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m6">
+                    <img class="card-img-top" src="images/about/6.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m6">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/6.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m7">
+                    <img class="card-img-top" src="images/about/7.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m7">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/7.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m8">
+                    <img class="card-img-top" src="images/about/8.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m8">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/8.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m9">
+                    <img class="card-img-top" src="images/about/9.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m9">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/9.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m10">
+                    <img class="card-img-top" src="images/about/10.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m10">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/10.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m11">
+                    <img class="card-img-top" src="images/about/11.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m11">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/11.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m12">
+                    <img class="card-img-top" src="images/about/12.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m12">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/12.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m13">
+                    <img class="card-img-top" src="images/about/13.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m13">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/13.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m14">
+                    <img class="card-img-top" src="images/about/14.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m14">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/14.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m15">
+                    <img class="card-img-top" src="images/about/15.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m15">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/15.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <button type="button" data-toggle="modal" data-target="#m16">
+                    <img class="card-img-top" src="images/about/16.jpg" alt="Card image">
+                </button>
+                <div class="modal fade" id="m16">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img class="card-img-top" src="images/about/16.jpg" alt="Card image">
+                            <button data-dismiss="modal" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--==============================footer=================================-->
+<div th:insert="fragments/footer"></div>
+<div th:insert="fragments/jivosite"></div>
+</body>
+</html>

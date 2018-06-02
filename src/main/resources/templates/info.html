@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112055931-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112055931-1');
+    </script>
+
+    <title>Турагентство "Travel Service" г. Киров (ул. Спасская 18) - Информация </title>
+    <div th:insert="fragments/headTag.jsp"></div>
+    <style type="text/css">
+        .stroke {
+            font-size: 15px;
+            margin-bottom: 5px;
+            text-shadow: black 1px 1px 0, black -1px -1px 0,
+            black -1px 1px 0, black 1px -1px 0;
+        }
+    </style>
+    <%--
+    <link rel="stylesheet" href="webjars/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="webjars/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="webjars/jquery/3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="webjars/popper.js/1.12.3/dist/popper.min.js"></script>
+    <script type="text/javascript" src="webjars/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" defer></script>
+    --%>
+</head>
+<body>
+<!-- Yandex.Metrika counter -->
+<div th:insert="fragments/yandex-metrika"></div>
+<!--==============================header=================================-->
+<div th:insert="fragments/header"></div>
+<!--==============================Content=================================-->
+<div class="content">
+    <div class="container_12">
+        <div class="banners">
+            <h6>Мы организуем командировки и деловые поездки по России, за границу, а также занимаемся приемом ваших
+                иностранных гостей, клиентов и контрагентов.</h6>
+            <h5><i class="fa fa-suitcase" aria-hidden="true"></i> Базовые услуги в поездках для бизнеса:</h5>
+            <ul style="list-style-type: circle">
+                <li><i class="fa fa-plane"> бронирование авиа билетов;</i></li>
+                <li><i class="fa fa-train" aria-hidden="true"> бронирование ж/д билетов по России и за рубежом;</i></li>
+                <li><i class="fa fa-bed"> бронирование номеров в отелях в России и за рубежом;</i></li>
+                <li><i class="fa fa-car"> аренда автомобилей;</i></li>
+                <li><i class="fa fa-road"> трансферы;</i></li>
+                <li><i class="fa fa-bus"> экскурсионное обслуживание;</i></li>
+                <li><i class="fa fa-id-card"> визовая поддержка;</i></li>
+                <li><i class="fa fa-handshake-o"> оформление приглашений для иностранных граждан;</i></li>
+                <li><i class="fa fa-plus-square"> оформление медицинских страховок.</i></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--==============================footer=================================-->
+<div th:insert="fragments/footer"></div>
+<div th:insert="fragments/jivosite"></div>
+</body>
+</html>

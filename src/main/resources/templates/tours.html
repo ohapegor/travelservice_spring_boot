@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112055931-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112055931-1');
+    </script>
+
+    <title>Турагентство "Travel Service" г. Киров (ул. Спасская 18) - Посик тура</title>
+    <div th:insert="fragments/headTag"></div>
+    <style type="text/css">
+        .stroke {
+            font-size: 15px;
+            margin-bottom: 5px;
+            text-shadow: black 1px 1px 0, black -1px -1px 0,
+            black -1px 1px 0, black 1px -1px 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <%--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    --%>
+    <div th:insert="fragments/headTag"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Yandex.Metrika counter -->
+<div th:insert="fragments/yandex-metrika"></div>
+<!--==============================header=================================-->
+<!--==============================Content=================================-->
+<div class="content">
+    <div th:insert="fragments/header"></div>
+    <div id="clientIframeContainer" align="center" style="background: #ebebeb; overflow-y: scroll; height:400px;"
+         class="row">
+        <br/>
+        <iframe id="clientIframe" src="https://moi-tour.com/frame/go/105879/trevel-servis-kirov-/0/1" scrolling="no"
+                style="overflow-x: hidden" marginheight="0" marginwidth="0" class="col-12" align="center"
+                frameborder="0" height="1000px"></iframe>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://www.moi-tour.com/partnerpknew/js/mwNewFrame/resize.js"></script>
+        <hr/>
+    </div>
+    <div class="container_12">
+        <h3 align="center">Горящие туры</h3>
+        <div class="banners">
+            <div th:each="tour : ${tours}">
+                <div class="grid_4">
+                    <div class="banner">
+                        <img th:src="${tour.imageHref}" height="300px" width="300px" alt="Error">
+                        <div class="label">
+                            <div class=" stroke" th:text="${tour.hotel}"></div>
+                            <div class=" stroke" th:text="${tour.country+' '+tour.city}"></div>
+                            <div class=" stroke" th:text="${tour.printDate()}"></div>
+                            <div class=" stroke" th:text="${tour.duration}"></div>
+                            <div class="stroke" th:text="${tour.forRoom} "><span
+                                    style="font-weight: bold" th:text="${tour.minPrice}">... ₽</span></div>
+                            <a th:href="@{https://kirov.ross-tur.ru/}">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==============================footer=================================-->
+<div th:insert="fragments/footer"></div>
+<div th:insert="fragments/jivosite"></div>
+</body>
+</html>

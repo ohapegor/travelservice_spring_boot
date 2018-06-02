@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Турагентство "Travel Service" г. Киров (ул. Спасская 18) - Новости</title>
+    <div th:insert="fragments/headTag"></div>
+</head>
+<body>
+<!-- Yandex.Metrika counter -->
+<div th:insert="fragments/yandex-metrika"></div>
+<!--==============================header=================================-->
+<!--==============================Content=================================-->
+<div class="content">
+    <div th:insert="fragments/header"></div>
+    <div class="container_12">
+        <h3 align="center">Новости туризма</h3>
+        <div th:each="n : ${news}">
+            <div class="blog">
+                <time th:datetime="${n.getDateTime()}">
+                    <span th:text="${#temporals.format(n.getDateTime(), 'dd-MMMM')}"></span>
+                    <span th:text="${#temporals.format(n.getDateTime(),'yyyy')}"></span>
+                </time>
+                <div class="extra_wrapper">
+                    <br>
+                    <div class="text1 col1"><a th:href="${n.href}" th:text="${n.title}"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="grid_2">
+                    <a th:href="${n.href}"><img th:src="${n.imageHref}" alt="" class="img_inner"></a>
+                </div>
+                <div class="grid_9">
+                    <br>
+                    <p th:text="${n.text}"></p>
+                </div>
+            </div>
+
+            <hr>
+        </div>
+    </div>
+</div>
+<!--==============================footer=================================-->
+<div th:insert="fragments/footer"></div>
+<div th:insert="fragments/jivosite"></div>
+</body>
+</html>

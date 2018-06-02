@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112055931-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112055931-1');
+    </script>
+
+    <title>Турагентство "Travel Service" г. Киров (ул. Спасская 18) - Контакты</title>
+      <div th:insert="fragments/headTag"></div>
+</head>
+<body>
+<!-- Yandex.Metrika counter -->
+<div th:insert="fragments/yandex-metrika"></div>
+<!--==============================header=================================-->
+<!--==============================Content=================================-->
+<div class="content">
+    <div th:insert="fragments/header"></div>
+    <div class="container_12">
+        <div class="grid_5">
+            <h3>Контакты</h3>
+            <div class="map">
+                <p><span class="blog">Режим работы ПН-ПТ с 10:00 до 18:00</span></p>
+                <div class="clear"></div>
+                <figure class="">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A19d5eeab35c6957a4025a3ea1143d00a389e2c4bfeda62fcc87b84d6f87ae82f&amp;source=constructor"
+                            width="500" height="400" frameborder="0"></iframe>
+                </figure>
+                <address>
+                    <dl>
+                        <dt>🚩Росс-Тур-Киров-Спасская 18</dt>
+                        <dd><span>Телефон: </span> ☎ 8(8332)22-67-01</dd>
+                        <dd><span>Телефон: </span> ☎ 8(8332)43-02-21</dd>
+                        <dd><span>Телефон: </span> 📱 +7 982 383 0221</dd>
+                        <dd>E-mail: <a href="mailto:trewel.servis@yandex.ru" class="col1">trewel.servis@yandex.ru</a></dd>
+                    </dl>
+                </address>
+            </div>
+        </div>
+        <div align="center" class="grid_6 prefix_1">
+            <h3 >Группа VK</h3>
+            <div id="vk_groups"></div>
+        </div>
+        <div id="vk_groups2"></div>
+    </div>
+</div>
+<!--==============================footer=================================-->
+<div th:insert="fragments/footer"></div>
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?151"></script>
+<!-- VK Widget -->
+<script type="text/javascript">
+    VK.Widgets.Group("vk_groups", {mode: 4, wide:1, height: "500"}, 41959365);
+    /*VK.Widgets.Group("vk_groups", {mode: 4, width: "400", height: "500"}, 41959365);*/
+</script>
+<!-- VK Widget -->
+<div th:insert="fragments/jivosite"></div>
+</body>
+</html>
